@@ -1,0 +1,35 @@
+import java.util.Date;
+class Invoice 
+{
+		private String invoiceNumber;
+		private Date invoiceDate;
+		private int invoiceType;
+		private Double DiscountPercent;
+		private Double invoiceTotal;
+
+		public Invoice(String number,double total,int type)
+		{
+			invoiceNumber = number;
+			invoiceDate = new Date();
+			invoiceType = type;
+			setInvoiceTotal(total,type);
+	}
+			public void setInvoiceTotal(double invTotal,int invoiceType)
+	{
+				if(invoiceType == 2)
+			{
+				DiscountPercent = 0.1;
+				invoiceTotal = invTotal*(1-DiscountPercent);
+			}
+			else
+			{
+				DiscountPercent = 0;
+				invoiceTotal = invTotal;
+			}
+	}
+	public String getInvoiceNumber() { return invoiceNumber; }
+	public Date getInvoiceDate() { return invoiceDate; }
+	public int getInvoiceType() { return invoiceType; }
+	public double getDiscountPercent() { return DiscountPercent; }
+	public double getInvoiceTotal() { return invoiceTotal; }
+}
