@@ -33,7 +33,6 @@ The application prompts the user to enter invoice details, calculates the total 
 7.  An invoice summary will be displayed.
 8.  To create another invoice, press "Enter" or click "OK".
 9.  To exit the application, enter `x` and click "OK".
- 
- #   I n v o i c e - A p p l i c a t i o n 
+
  
  
